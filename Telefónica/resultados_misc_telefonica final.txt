@@ -1,8 +1,0 @@
-- OIBDA
-- Rentabilidad
-- flujo de caja libre
-- La deuda financiera neta
-- Adquisición
-- CapEx
-- El flujo de caja
-- OIBDA-CapEx
