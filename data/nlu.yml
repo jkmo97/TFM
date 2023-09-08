@@ -1,0 +1,653 @@
+version: "3.1"
+
+nlu:
+- intent: hola
+  examples: |
+    - hola
+    - buenas
+    - ey
+    - hey
+    - qué tal?
+    - cómo estas?
+    - Qué pasa?
+    - holi
+    - hello
+
+- intent: adios
+  examples: |
+    - adiós
+    - nos vemos
+    - hasta luego
+    - hasta pronto
+    - chao
+    - ciao
+    - chau
+    - nos vemos
+    - me voy
+    - chaito
+
+- intent: nombre
+  examples: |
+    - soy [Kevin](nombre)
+    - Soy [Pedro](nombre)
+    - Soy [Juan](nombre)
+    - Me llamo [Luisa](nombre)
+    - Me llamo [Julia}(nombre)
+    - Mi nombre es [Rosa](nombre)
+    - La gente me llama [Miguel](nombre)
+    - Mi nombre es [Carlos](nombre)
+    - Me llaman [Pepe](nombre)
+
+- intent: información
+  examples:  |
+    - quiero información sobre [telefónica](Telefónica)
+    - Me gustaría conocer información financiera sobre [Telefónica](Telefónica)
+    - Dame información sobre [telefónica](Telefónica)
+    - Quiero conocer información acerca de [telefónica](Telefónica)
+    - Necesito información de [Telefónica](Telefónica)
+    - quiero información sobre el [BBVA](BBVA)
+    - Me gustaría conocer información financiera sobre [bbva](BBVA)
+    - Dame información sobre [bbva](BBVA)
+    - Quiero conocer información acerca de [BBVA](BBVA)
+    - Necesito información de [BBVA](BBVA)
+    - quiero información sobre [inditex](Inditex)
+    - Me gustaría conocer información financiera sobre [Inditex](Inditex)
+    - Dame información sobre [inditex](Inditex)
+    - Quiero conocer información acerca de [Inditex](Inditex)
+    - Necesito información de [Inditex](Inditex)
+    - quiero información sobre el banco [Santander](Santander)
+    - Me gustaría conocer información financiera sobre [Santander](Santander)
+    - Dame información sobre [santander](Santander)
+    - Quiero conocer información acerca de [Santander](Santander)
+    - Necesito información de [Santander](Santander)
+
+
+- intent: beneficio_telefonica
+  examples: |
+    - qué beneficio tiene [telefónica](Telefónica)?
+    - cuál es el beneficio neto de [telefónica](Telefónica)?
+    - cuánto gana [telefónica](Telefónica) al año?
+    - cuál es el beneficio neto de [telefónica](Telefónica)?
+    - dime lo que ingresa neto [telefónica](Telefónica) al año
+    - cuánto ha ganado [telefónica](Telefónica)?
+    - cuánto ganó [telefónica](Telefónica) en 2014?
+    - quiero saber las ganancias de [telefónica](Telefónica)
+    - qué beneficios ha tenido [Telefónica](Telefónica)?
+    - me gustaría saber el beneficio de [Telefónica](Telefónica)
+    
+
+- intent: Educación_telefonica
+  examples: |
+   - cómo aporta [telefónica](Telefónica) a la educación?
+   - qué hace [telefónica](Telefónica) en educación?
+   - hace algo [telefónica](Telefónica) en el tema de la educación?
+   - invierte [telefónica](Telefónica) en la educación?
+   - es la educación parte de la aportación social de [telefónica](Telefónica)?
+   - la educación para [telefónica](Telefónica)
+   - [telefónica](Telefónica) y la educación
+   - qué hace [telefónica](Telefónica) por la educación?
+   - aporta algo [telefónica](Telefónica) a la educación?
+   - existe aportación de [Telefónica](Telefónica) a la educación?
+
+
+
+- intent: sostenibilidad_telefonica
+  examples: |
+    - qué hace [telefónica](Telefónica) para la sostenibilidad?
+    - podemos encontrar medidas de sostenibilidad en [telefónica](Telefónica)?
+    - cuáles son las medidas que toma [telefónica](Telefónica) para la sostenibilidad?
+    - qué medidas de sostenibilidad tiene [telefónica](Telefónica)?
+    - qué hace [telefónica](Telefónica) por contribuir a la sostenibilidad?
+    - existe alguna medida de sostenibilidad por parte de [Telefónica](Telefónica)?
+    - realiza [Telefónica](Telefónica) activadades para la sostenibilidad?
+    - [Telefónica](Telefónica) y la sostenibilidad
+    - tiene [Telefónica](Telefónica) medidas sostenibles para el planeta?
+    - realiza [Telefónica](Telefónica) acciones de sostenibilidad?
+
+
+
+- intent: por_acción_telefonica
+  examples: |
+   - acciones de [Telefónica](Telefónica)
+   - dime qué pasa con la acción de [Telefónica](Telefónica)
+   - acción de [Telefónica](Telefónica)
+   - Dame información sobre la acción de [Telefónica](Telefónica)
+   - Necesito información sobre la acción de [Telefónica](Telefónica)
+   - Quiero información sobre la acción de [Telefónica](Telefónica)
+   - Existe información sobre la acción de [Telefónica](Telefónica)
+   - Me podrías dar información relativa a la acción de [Telefónica](Telefónica) o su cotización?
+   - Tienes info sobre la acción de [Telefónica](Telefónica)?
+   - Me gustaría conocer cómo estaba la acción de [Telefónica](Telefónica)
+
+
+- intent: preguntar_precio_accion_telefonica
+  examples: |
+   - cuál es el precio de la acción de [telefónica](Telefónica)?
+   - a cuánto está la acción de [telefónica](Telefónica)?
+   - dime el precio de la acción de [telefónica](Telefónica)
+   - A cuánto cotiza la acción de [telefónica](Telefónica)?
+   - cuánto vale la acción de [Telefónica](Telefónica)
+   - Quiero saber el precio de la acción de [Telefónica](Telefónica)
+   - Me puedes decir el precio por acción de [Telefónica](Telefónica)?
+   - qué cuesta el precio de la acción de [Telefónica](Telefónica)?
+   - precio de la acción de [Telefónica](Telefónica)
+   - a cuánto asciende el precio por acción de [Telefónica](Telefónica)?
+
+- intent: empleados_telefonica
+  examples: |
+   - dame información sobre los trabajadores de [telefónica](Telefónica)
+   - dame datos sobre los trabajadores de [Telefónica](Telefónica)
+   - necesito info sobre los empleados de [telefónica](Telefónica)
+   - información sobre los empleados en [Telefónica](Telefónica)
+   - [telefónica](Telefónica) y sus empleados
+   - cuántos empleados tiene [telefónica](Telefónica)?
+   - cuál es el número de empleados en [telefónica](Telefónica)?
+   - dime el número de trabajadores de [Telefónica](Telefónica)
+   - quiero saber el número de empleados de [Telefónica](Telefónica)
+   - número de empleados en [telefónica](Telefónica)?
+   - cuál es el número de empleados en [telefónica](Telefónica)?
+   - dime el número de empleados de [Telefónica](Telefónica)
+   - quiero saber el número de trabajadores de [Telefónica](Telefónica)
+
+- intent: social_telefonica
+  examples: |
+   - qué hace para aportar [Telefónica](Telefónica) a la sociedad?
+   - qué hace [Telefónica](Telefónica) para la sociedad?
+   - la sociedad y [Telefónica](Telefónica)
+   - tiene [Telefónica](Telefónica) política social o acción social?
+   - cuál es la política social de [telefónica](Telefónica)?
+   - qué hace para aportar [Telefónica](Telefónica) a la sociedad?
+   - qué hace [Telefónica](Telefónica) por la sociedad?
+   - la sociedad y [telefónica](Telefónica)
+   - tiene [Telefónica](Telefónica) política o acción social?
+   - cuál es la política social de [Telefónica](Telefónica)?
+
+
+- intent: OIBDA_telefonica
+  examples: |
+   - cuál es el oibda de [Telefónica](Telefónica)?
+   - dime el oibda de [Telefónica](Telefónica)
+   - cuéntame sobre el oibda de [Telefónica](Telefónica)
+   - qué cifra es el oibda de [telefónica](Telefónica)
+   - quiero saber el oibda de [Telefónica](Telefónica)
+   - a cuánto asciende el oibda de [Telefónica](Telefónica)?
+   - Necesito saber el oibda de [Telefónica](Telefónica)
+   - Dame información acerca del oibda de [Telefónica](Telefónica)
+   - Me gustaría que me dijeras el oibda de [Telefónica](Telefónica)
+   - Dame datos sobre el oibda de [Telefónica](Telefónica)
+
+
+
+- intent: dividendos_telefonica
+  examples: |
+   - cuál es la política de dividendos en [Telefónica](Telefónica)?
+   - dime qué pasa con la acción de [Telefónica](Telefónica)
+   - retribucción por dividendo en [Telefónica](Telefónica)
+   - quiero saber acerca de la política de dividendos de [Telefónica](Telefónica)
+   - Me gustaría saber acerca de los dividendos que ha pagado [Telefónica](Telefónica)
+   - dividendos y [Telefónica](Telefónica)
+   - cómo funcionan los dividendos de [Telefónica](Telefónica)?
+   - quiero información acerca de los dividendos de [Telefónica](Telefónica)
+   - dame información sobre los dividendos de [Telefónica](Telefónica)
+   - cóm funcionan los dividendos de [Telefónica](Telefónica)
+
+- intent: medioambiente_telefonica
+  examples: |
+   - qué acciones toma [Telefónica](Telefónica) para el medioambiente?
+   - protege [Telefónica](Telefónica) el medioambiente?
+   - qué acciones de sostenibilidad relacionadas con el medioambiente tiene [Telefónica](Telefónica)
+   - existen medidas para cuidar el medioambiente por parte de [Telefónica](Telefónica)?
+   - Me gustaría saber si [Telefónica](Telefónica) tiene políticas relacionadas con el medioambiente
+   - protege [Telefónica](Telefónica) el medioambiente?
+   - [Telefónica](Telefónica) y el medioambiente
+   - medidas de [Telefónica](Telefónica) a favor del medioambiente 
+   - hace algo [Telefónica](Telefónica) por cuidar el medioambiente?
+   - Dime si [Telefónica](Telefónica) tiene medidas para el medioambiente
+
+- intent: educación_santander
+  examples: |
+   - cómo aporta [Santander](Santander) a la educación?
+   - qué hace [Santander](Santander) en educación?
+   - hace algo [Santander](Santander) en el tema de la educación?
+   - invierte [santander](Santander) en la educación?
+   - es la educación parte de la aportación social del banco [Santander](Santander)?
+   - la educación para [Santander](Santander)
+   - [Santander](Santander) y la educación
+   - qué hace [santander](Santander) por la educación?
+   - aporta algo [Santander](Santander) a la educación?
+   - existe aportación de [Santander](Santander) a la educación?
+  
+- intent: empleados_santander
+  examples: |
+   - dame información sobre los trabajadores de [Santander](Santander)
+   - dame datos sobre los empleados de [Santander](Santander)
+   - necesito info sobre los trabajadores de [Santander](Santander)
+   - información sobre los empleados en [Santander](Santander)
+   - [Santander](Santander) y sus empleados
+   - cuántos empleados tiene [Santander](Santander)?
+   - cuál es el número de trabajadores en [Santander](Santander)?
+   - dime el número de empleados de [Santander](Santander)
+   - quiero saber el número de empleados de [Santander](Santander)
+   - número de empleados en [Santander](Santander)?
+   - cuál es el número de empleados en [Santander](Santander)?
+   - dime el número de empleados de [Santander](Santander)
+   - quiero saber el número de trabajadores de [Santander](Santander)
+
+
+
+- intent: por_acción_santander
+  examples: |
+   - acciones de [Santander](Santander)
+   - dime qué pasa con la acción de [Santander](Santander)
+   - acción de [Santander](Santander)
+   - Dame información sobre la acción de [Santander](Santander)
+   - Necesito información sobre la acción de [Santander](Santander)
+   - Quiero información sobre la acción de [Santander](Santander)
+   - Existe información sobre la acción de [Santander](Santander)
+   - Me podrías dar información relativa a la acción de [Santander](Santander) o su cotización?
+   - Tienes info sobre la acción de [Santander](Santander)?
+   - Me gustaría conocer cómo estaba la acción de [Santander](Santander)
+   
+- intent: preguntar_precio_accion_santander
+  examples: |
+   - cuál es el precio de la acción de [Santander](Santander)?
+   - a cuánto está la acción de [Santander](Santander)?
+   - dime el precio de la acción de [Santander](Santander)
+   - A cuánto cotiza la acción de [Santander](Santander)?
+   - cuánto vale la acción de [Santander](Santander)
+   - Quiero saber el precio de la acción de [Santander](Santander)
+   - Me puedes decir el precio por acción de [Santander](Santander)?
+   - qué cuesta el precio de la acción de [Santander](Santander)?
+   - precio de la acción de [Santander](Santander)
+   - a cuánto asciende el precio por acción de [Santander](Santander)?
+
+
+
+- intent: dividendos_santander
+  examples: |
+   - cuál es la política de dividendos en [Santander](Santander)?
+   - dime qué pasa con la acción de [Santander](Santander)
+   - retribucción por dividendo en [Santander](Santander)
+   - quiero saber acerca de la política de dividendos de [Santander](Santander)
+   - Me gustaría saber acerca de los dividendos que ha pagado [Santander](Santander)
+   - dividendos y [Santander](Santander)
+   - cómo funcionan los dividendos de [Santander](Santander)?
+   - quiero información acerca de los dividendos de [Santander](Santander)
+   - dame información sobre los dividendos de [Santander](Santander)
+   - cóm funcionan los dividendos de [Santander](Santander)
+
+- intent: social_santander
+  examples: |
+   - qué hace para aportar [Santander](Santander) a la sociedad?
+   - qué hace [Santander](Santander) para la sociedad?
+   - la sociedad y [Santander](Santander)
+   - tiene [Santander](Santander) política social o acción social?
+   - cuál es la política social de [Santander](Santander)?
+   - qué hace para aportar [Santander](Santander) a la sociedad?
+   - qué hace [Santander](Santander) por la sociedad?
+   - la sociedad y [Santander](Santander)
+   - tiene [Santander](Santander) política o acción social?
+   - cuál es la política social de [Santander](Santander)?
+
+
+- intent: beneficio_antes_de_impuesto_santander
+  examples: |
+   - cuánto ha ganado [Santander](Santander) antes de impuestos?
+   - cuál es el beneficio ordinario antes de impuestos de [Santander](Santander)?
+   - Quiero saber el beneficio antes de impuestos de [Santander](Santander)
+   - Me gustaría conocer el beneficio antes de impuestos de [Santander](Santander)
+   - Dime cuánto es el beneficio antes de impuestos de [Santander](Santander)
+   - Sabes cuánto es el beneficio antes de impuestos de [Santander](Santander)?
+   - tienes información sobre el beneficio antes de impuestos de [Santander](Santander)?
+   - conoces el beneficio antes de impuestos de [Santander](Santander)?
+   - Me puedes decir el beneficio antes de impuestos de [Santander](Santander)?
+   - Quisiera saber cuanto es el beneficio antes de impuesto que tiene [Santander](Santander)
+
+- intent: becas_santander
+  examples: |
+   - Tiene [Santander](Santander) becas como parte de su inversión en educación?
+   - de qué manera aporta [Santander](Santander) en la educación?
+   - qué acciones realiza [Santander](Santander) en educación?
+   - tiene [Santander](Santander) becas?
+   - qué becas da [Santander](Santander)?
+   - qué ayudas da [Santander](Santander) en educación?
+   - cómo aporta [Santander](Santander) en el sector de la educación?
+   - me gustaría saber si  [Santander](Santander) tiene acciones sociales en el sector educativo?
+   - [Santander](Santander) ayuda al sector educativo?
+   - Quiero saber si [Santander](Santander) tiene algunas acciones sociales en el sector educativo 
+
+- intent: sostenibilidad_santander
+  examples: |
+    - qué hace [Santander](Santander) para la sostenibilidad?
+    - podemos encontrar medidas de sostenibilidad en [Santander](Santander)?
+    - cuáles son las medidas que toma [Santander](Santander) para la sostenibilidad?
+    - qué medidas de sostenibilidad tiene [Santander](Santander)?
+    - qué hace [Santander](Santander) por contribuir a la sostenibilidad?
+    - existe alguna medida de sostenibilidad por parte de [Santander](Santander)?
+    - realiza [Santander](Santander) activadades para la sostenibilidad?
+    - [Santander](Santander) y la sostenibilidad
+    - tiene [Santander](Santander) medidas sostenibles para el planeta?
+    - realiza [Santander](Santander) acciones de sostenibilidad?
+
+
+- intent: donar_bbva
+  examples: |
+   - ha hecho donaciones [bbva](BBVA)?
+   - De qué formas hace donaciones [BBVA](BBVA)?
+   - forman las donaciones parte del plan de acción social de [BBVA](BBVA)
+   - qué dona [BBVA](BBVA)?
+   - Dime qué dona [BBVA](BBVA)
+   - Existen alguna donación por parte de [BBVA](BBVA)?
+   - De qué manera dona [BBVA](BBVA)?
+   - contribuyen [BBVA](BBVA) donando?
+   - dona [BBVA](BBVA)?
+   - hace [BBVA](BBVA) donaciones a alguna causa?
+
+- intent: empleados_bbva
+  examples: |
+   - dame información sobre los trabajadores de [BBVA](BBVA)
+   - dame datos sobre los trabajadores de [BBVA](BBVA)
+   - necesito info sobre los empleados de [BBVA](BBVA)
+   - información sobre los empleados en [BBVA](BBVA)
+   - [BBVA](BBVA) y sus empleados
+   - cuántos empleados tiene [BBVA](BBVA)?
+   - cuál es el número de empleados en [BBVA](BBVA)?
+   - dime el número de trabajadores de [BBVA](BBVA)
+   - quiero saber el número de empleados de [BBVA](BBVA)
+   - número de empleados en [BBVA](BBVA)?
+   - cuál es el número de empleados en [BBVA](BBVA)?
+   - dime el número de empleados de [BBVA](BBVA)
+   - quiero saber el número de trabajadores de [BBVA](BBVA)
+
+
+- intent: sociales_bbva
+  examples: |
+   - qué hace para aportar [BBVA](BBVA) a la sociedad?
+   - qué hace [BBVA](BBVA) para la sociedad?
+   - la sociedad y [BBVA](BBVA)
+   - tiene [BBVA](BBVA) política social o acción social?
+   - cuál es la política social de [BBVA](BBVA)?
+   - qué hace para aportar [BBVA](BBVA) a la sociedad?
+   - qué hace [BBVA](BBVA) por la sociedad?
+   - la sociedad y [BBVA](BBVA)
+   - tiene [BBVA](BBVA) política o acción social?
+   - cuál es la política social de [BBVA](BBVA)?
+
+- intent: beneficio_bbva
+  examples: |
+   - qué beneficio tiene [BBVA](BBVA)?
+   - cuál es el beneficio neto de [BBVA](BBVA)?
+   - cuánto gana [BBVA](BBVA) al año?
+   - cuál es el beneficio neto de [BBVA](BBVA)?
+   - dime lo que ingresa  [BBVA](BBVA) al año
+   - cuánto ha ganado [BBVA](BBVA)?
+   - cuánto ganó [BBVA](BBVA) en 2014?
+   - quiero saber las ganancias de [BBVA](BBVA)
+   - qué beneficios ha tenido [BBVA](BBVA)?
+   - me gustaría saber el beneficio de [BBVA](BBVA)
+
+
+- intent: becas_bbva
+  examples: |
+   - Tiene [BBVA](BBVA) becas como parte de su inversión en educación?
+   - de qué manera aporta [BBVA](BBVA) en la educación?
+   - qué acciones realiza [BBVA](BBVA) en educación?
+   - tiene [BBVA](BBVA) becas?
+   - qué becas da [BBVA](BBVA)?
+   - qué ayudas da [BBVA](BBVA) en educación?
+   - cómo aporta [BBVA](BBVA) en el sector de la educación?
+   - me gustaría saber si [BBVA](BBVA) tiene acciones sociales en el sector educativo?
+   - [BBVA](BBVA) ayuda al sector educativo?
+   - Quiero saber si [BBVA](BBVA) tiene algunas acciones sociales en el sector educativo
+
+
+- intent: sostenibilidad_bbva
+  examples: |
+   - qué hace [BBVA](BBVA) para la sostenibilidad?
+   - podemos encontrar medidas de sostenibilidad en [BBVA](BBVA)?
+   - cuáles son las medidas que toma [BBVA](BBVA) para la sostenibilidad?
+   - qué medidas de sostenibilidad tiene [BBVA](BBVA)?
+   - qué hace [BBVA](BBVA) por contribuir a la sostenibilidad?
+   - existe alguna medida de sostenibilidad por parte de [BBVA](BBVA)?
+   - realiza [BBVA](BBVA) activadades para la sostenibilidad?
+   - [BBVA](BBVA) y la sostenibilidad
+   - tiene [BBVA](BBVA) medidas sostenibles para el planeta?
+   - realiza [BBVA](BBVA) acciones de sostenibilidad?
+  
+
+- intent: educación_bbva
+  examples: |
+   - cómo aporta [BBVA](BBVA) a la educación?
+   - qué hace [BBVA](BBVA) en educación?
+   - hace algo [BBVA](BBVA) en el tema de la educación?
+   - invierte [BBVA](BBVA) en la educación?
+   - es la educación parte de la aportación social del banco [BBVA](BBVA)?
+   - la educación para [BBVA](BBVA)
+   - [BBVA](BBVA) y la educación
+   - qué hace [BBVA](BBVA) por la educación?
+   - aporta algo [BBVA](BBVA) a la educación?
+   - existe aportación de [BBVA](BBVA) a la educación?
+
+- intent: por_acción_bbva
+  examples: |
+   - cuál es la política de dividendos en [BBVA](BBVA)?
+   - dime qué pasa con la acción de [BBVA](BBVA)
+   - retribucción por dividendo en [BBVA](BBVA)
+   - Dame información sobre la acción de [BBVA](BBVA)
+   - quiero saber acerca de la política de dividendos de [BBVA](BBVA)
+   - Me gustaría saber acerca de los dividendos que ha pagado [BBVA](BBVA)
+   - dividendos y [BBVA](BBVA)
+   - cómo funcionan los dividendos de [BBVA](BBVA)?
+   - quiero información acerca de los dividendos de [BBVA](BBVA)
+   - precio de la acción de [BBVA](BBVA)
+
+
+- intent: medioambiente_bbva
+  examples: |
+   - qué acciones toma [BBVA](BBVA) para el medioambiente?
+   - protege [BBVA](BBVA) el medioambiente?
+   - qué acciones de sostenibilidad relacionadas con el medioambiente tiene [BBVA](BBVA)
+   - existen medidas para cuidar el medioambiente por parte de [BBVA](BBVA)?
+   - Me gustaría saber si [BBVA](BBVA) tiene políticas relacionadas con el medioambiente
+   - protege [BBVA](BBVA) el medioambiente?
+   - [BBVA](BBVA) y el medioambiente
+   - medidas de [BBVA](BBVA) a favor del medioambiente 
+   - hace algo [BBVA](BBVA) por cuidar el medioambiente?
+   - Dime si [BBVA](BBVA) tiene medidas para el medioambiente
+
+- intent: Beneficios_inditex
+  examples: |
+    - qué beneficio tiene [inditex](Inditex)?
+    - cuál es el beneficio neto de [inditex](Inditex)?
+    - cuánto gana [inditex](Inditex) al año?
+    - cuál es el beneficio neto de [inditex](Inditex)?
+    - dime lo que ingresa [inditex](Inditex) al año
+    - cuánto ha ganado [Inditex](Inditex)?
+    - cuánto ganó [Inditex](Inditex) en 2014?
+    - quiero saber las ganancias de [inditex](Inditex)
+    - qué beneficios ha tenido [Inditex](Inditex)?
+    - me gustaría saber el beneficio de [Inditex](Inditex)
+    
+- intent: sociales_inditex
+  examples: |
+   - qué hace para aportar [Inditex](Inditex) a la sociedad?
+   - qué hace [Inditex](Inditex) para la sociedad?
+   - la sociedad y [Inditex](Inditex)
+   - tiene [Inditex](Inditex) política social o acción social?
+   - cuál es la política social de [Inditex](Inditex)?
+   - qué hace para aportar [Inditex](Inditex) a la sociedad?
+   - qué hace [Inditex](Inditex) por la sociedad?
+   - la sociedad y [Inditex](Inditex)
+   - tiene [Inditex](Inditex) política o acción social?
+   - cuál es la política social de [Inditex](Inditex)?
+
+
+- intent: donar_inditex
+  examples: |
+   - ha hecho donaciones [Inditex](Inditex)?
+   - De qué formas hace donaciones [Inditex](Inditex)?
+   - forman las donaciones parte del plan de acción social de [Inditex](Inditex)
+   - qué dona [Inditex](Inditex)?
+   - Dime qué dona [Inditex](Inditex)
+   - Existen alguna donación por parte de [Inditex](Inditex)?
+   - De qué manera dona [Inditex](Inditex)?
+   - contribuyen [Inditex](Inditex) donando?
+   - dona [Inditex](Inditex)?
+   - hace [Inditex](Inditex) donaciones a alguna causa?
+
+- intent: más_info
+  examples: |
+   - necesito más información
+   - quiero más info
+   - dame más info
+
+- intent: medioambiente_inditex
+  examples: |
+   - qué acciones toma [Inditex](Inditex)  para el medioambiente?
+   - protege [Inditex](Inditex)  el medioambiente?
+   - qué acciones de sostenibilidad relacionadas con el medioambiente tiene [Inditex](Inditex) 
+   - existen medidas para cuidar el medioambiente por parte de [Inditex](Inditex) ?
+   - Me gustaría saber si [Inditex](Inditex)  tiene políticas relacionadas con el medioambiente
+   - protege [Inditex](Inditex)  el medioambiente?
+   - [Inditex](Inditex) y el medioambiente
+   - medidas de [Inditex](Inditex) a favor del medioambiente 
+   - hace algo [Inditex](Inditex) por cuidar el medioambiente?
+   - Dime si [Inditex](Inditex) tiene medidas para el medioambiente
+
+
+- intent: EBITDA_inditex
+  examples: |
+   - me gustaría saber el ebitda de [Inditex](Inditex)
+   - cuál es el beneficio operativo antes de impuestos de [Inditex](Inditex)
+   - me podrías decir el resultado bruto de explotación de  [Inditex](Inditex)
+   - Quiero saber el ebitda de [Inditex](Inditex)
+   - cuánto es el ebitda de [Inditex](Inditex)?
+   - me puedes decir el ebitda de [Inditex](Inditex)?
+   - cuánto es el ebitda de [Inditex](Inditex)?
+   - tienes información acerca del ebitda de [Inditex](Inditex)?
+   - existe información sobre el ebitda de [Inditex](Inditex)?
+   - cuál es el ebitda de [Inditex](Inditex)?
+  
+
+- intent: educación_inditex
+  examples: |
+   - cómo aporta [Inditex](Inditex) a la educación?
+   - qué hace [Inditex](Inditex) en educación?
+   - hace algo [Inditex](Inditex) en el tema de la educación?
+   - invierte [Inditex](Inditex) en la educación?
+   - es la educación parte de la aportación social del banco [Inditex](Inditex)?
+   - la educación para [Inditex](Inditex)
+   - [Inditex](Inditex) y la educación
+   - qué hace [Inditex](Inditex) por la educación?
+   - aporta algo [Inditex](Inditex) a la educación?
+   - existe aportación de [Inditex](Inditex) a la educación?
+
+
+- intent: empleados_inditex
+  examples: |
+   - dame información sobre los trabajadores de [Inditex](Inditex)
+   - dame datos sobre los trabajadores de [Inditex](Inditex)
+   - necesito info sobre los empleados de [Inditex](Inditex)
+   - información sobre los empleados en [Inditex](Inditex)
+   - [Inditex](Inditex) y sus empleados
+   - cuántos empleados tiene [Inditex](Inditex)?
+   - cuál es el número de empleados en [Inditex](Inditex)?
+   - dime el número de trabajadores de [Inditex](Inditex)
+   - quiero saber el número de empleados de [Inditex](Inditex)
+   - número de empleados en [Inditex](Inditex)?
+   - cuál es el número de empleados en [Inditex](Inditex)?
+   - dime el número de empleados de [Inditex](Inditex)
+   - quiero saber el número de trabajadores de [Inditex](Inditex)
+  
+
+
+
+- intent: preguntar_precio_accion_inditex
+  examples: |
+   - cuál es el precio de la acción de [Inditex](Inditex)?
+   - a cuánto está la acción de [Inditex](Inditex)?
+   - dime el precio de la acción de [Inditex](Inditex)
+   - A cuánto cotiza la acción de [Inditex](Inditex)?
+   - cuánto vale la acción de [Inditex](Inditex)
+   - Quiero saber el precio de la acción de [Inditex](Inditex)
+   - Me puedes decir el precio por acción de [Inditex](Inditex)?
+   - qué cuesta el precio de la acción de [Inditex](Inditex)?
+   - precio de la acción de [Inditex](Inditex)
+   - a cuánto asciende el precio por acción de [Inditex](Inditex)?
+
+
+
+- intent: por_acción_inditex
+  examples: |
+   - acciones de [Inditex](Inditex)
+   - dime qué pasa con la acción de [Inditex](Inditex)
+   - acción de [Inditex](Inditex)
+   - Dame información sobre la acción de [Inditex](Inditex)
+   - Necesito información sobre la acción de [Inditex](Inditex)
+   - Quiero información sobre la acción de [Inditex](Inditex)
+   - Existe información sobre la acción de [Inditex](Inditex)
+   - Me podrías dar información relativa a la acción de [Inditex](Inditex) o su cotización?
+   - Tienes info sobre la acción de [Inditex](Inditex)?
+   - Me gustaría conocer cómo estaba la acción de [Inditex](Inditex)
+
+- intent: dividendos_inditex
+  examples: |
+   - cuál es la política de dividendos en [Inditex](Inditex)?
+   - dime qué pasa con la acción de [Inditex](Inditex)
+   - retribucción por dividendo en [Inditex](Inditex)
+   - quiero saber acerca de la política de dividendos de [Inditex](Inditex)
+   - Me gustaría saber acerca de los dividendos que ha pagado [Inditex](Inditex)
+   - dividendos y [Inditex](Inditex)
+   - cómo funcionan los dividendos de [Inditex](Inditex)?
+   - quiero información acerca de los dividendos de [Inditex](Inditex)
+   - dame información sobre los dividendos de [Inditex](Inditex)
+   - cóm funcionan los dividendos de [Inditex](Inditex)
+
+- intent: gracias
+  examples: |
+   - muchas gracias
+   - gracias
+   - te lo agradezco
+   - estoy agradecido por tu ayuda
+   - Me has ayudado mucho
+   - Gracia por la información
+   - Te agradezco la información que me has dado
+   - No sé qué haría sin tu ayuda
+   - Moltes gracies
+   - thanks
+
+- intent: chitchat/ask_nombre
+  examples: |
+   - Cómo te llamas?
+   - Puedes decirme tu nombre?
+   - Cómo te llaman?
+   - Tienes nombre?
+   - Te han puesto nombre?
+
+
+- intent: chitchat/ask_creador
+  examples: |
+   - Quién te ha creador?
+   - Quién es tu creador?
+   - Cómo se llama tu creador?
+   - Quién te ha hecho?
+   - Has sido creado por alguien?
+
+- intent: chitchat/ask_futuro
+  examples: |
+   - ¿Te van a seguir desarrollando?
+   - Cuál es tu futuro?
+   - Sabes qué va a pasar contigo?
+   - Vas a ser desarrollado con más información?
+   - Van a actualizarte?
+
+- intent: chitchat/ask_uso
+  examples: |
+   - Para qué sirves?
+   - Cuál es tu función?
+   - Para que te han creado?
+   - Para qué vales?
+   - A qué te dedicas?
+
+
+  

@@ -1,0 +1,154 @@
+version: "3.1"
+
+intents:
+  - hola
+  - nombre
+  - adios
+  - información
+  - beneficio_telefonica
+  - Educación_telefonica
+  - sostenibilidad_telefonica
+  - por_acción_telefonica
+  - preguntar_precio_accion_telefonica
+  - empleados_telefonica
+  - social_telefonica
+  - OIBDA_telefonica
+  - dividendos_telefonica
+  - medioambiente_telefonica
+  - educación_santander
+  - empleados_santander
+  - por_acción_santander
+  - preguntar_precio_accion_santander
+  - dividendos_santander
+  - social_santander
+  - beneficio_antes_de_impuesto_santander
+  - becas_santander
+  - sostenibilidad_santander
+  - donar_bbva
+  - empleados_bbva
+  - sociales_bbva
+  - beneficio_bbva
+  - becas_bbva
+  - sostenibilidad_bbva
+  - educación_bbva
+  - por_acción_bbva
+  - medioambiente_bbva
+  - Beneficios_inditex
+  - sociales_inditex
+  - donar_inditex
+  - más_info
+  - medioambiente_inditex
+  - EBITDA_inditex
+  - educación_inditex
+  - empleados_inditex
+  - preguntar_precio_accion_inditex
+  - por_acción_inditex
+  - dividendos_inditex
+  - chitchat
+  - gracias
+  
+entities:
+  - BBVA
+  - Telefónica
+  - Santander
+  - Inditex
+  - nombre
+
+slots:
+
+  nombre:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: nombre
+
+  entidad:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: BBVA
+    - type: from_entity
+      entity: Telefónica
+    - type: from_entity
+      entity: Santander
+    - type: from_entity
+      entity: Inditex
+
+forms:
+  name_form:
+    required_slots:
+      - nombre
+
+responses:
+
+  utter_hola:
+  - text: "¡Hola!"
+
+  utter_ask_name_form_nombre:
+  - text: "¿Cuál es su nombre?"
+
+  utter_ask_saludo:
+  - text: "Hola {nombre}. ¿Qué pregunta quieres hacerme? \n\n Recuerda que poseo información de los informes anuales de Telefónica en 2014, BBVA en 2016, Santander en 2017 e Inditex en 2017.\n\n
+            Para Telefónica tengo la siguiente información:\n
+                - sostenibilidad y medio ambiente\n
+                - Política social y educación\n
+                - Número de empleados\n
+                - Indicadores financieros: OIBDA, beneficio neto, dividendos, cotización\n\n
+            
+            Para Santander tengo la siguiente información:\n
+                - sostenibilidad y medio ambiente\n
+                - Política social y educación\n
+                - Número de empleados\n
+                - Indicadores financieros: beneficio ordinario antes de impuestos, beneficio atribuido, beneficio ordinario atribuido, dividendos\n\n
+            
+            Para BBVA tengo la siguiente información:\n
+                - sostenibilidad y medio ambiente\n
+                - Política social y educación\n
+                - Número de empleados\n
+                - Indicadores financieros: beneficio atribuido, cotización, dividendos\n\n
+                - Donaciones
+
+            Para Inditex tengo la siguiente información:\n
+                - sostenibilidad y medio ambiente\n
+                - Política social y educación\n
+                - Número de empleados\n
+                - Indicadores financieros: beneficio, ebitda, dividendos, cotización"
+
+  utter_pregunta_info_entidad:
+  - text: "¿Qué te gustaría saber sobre {entidad}?"
+
+  utter_adios:
+  - text: "Adiós. Muchas gracias por usar este agente"
+  
+  utter_gracias:
+  - text: " No hay de qué. Puedes seguir haciéndome preguntas"
+
+  utter_chitchat/ask_nombre:
+  - text: "Todavía no tengo nombre. Soy solo un prototipo"
+  - text: "Por ahora no tengo nombre, pero me gustaría tener uno"
+
+  utter_chitchat/ask_creador:
+  - text: "Me ha creado Kevin"
+
+  utter_chitchat/ask_futuro:
+  - text: "No lo sé, el futuro es incierto"
+  
+  utter_chitchat/ask_uso:
+  - text: "Me han creado para dar información sobre algunas empresas"
+
+  utter_please_rephrase:
+  - text: "Lo siento, no te he entendido. Por favor, podrías realizar la pregunta de otra forma"
+
+  utter_default:
+  - text: "Perdona, no te he entendido. ¿Puedes repetir la pregunta?"
+
+ 
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+- Coger_Intent
+- action_info_entidad

@@ -1,0 +1,273 @@
+version: "3.1"
+
+stories:
+
+- story: hola path
+  steps:
+  - intent: hola 
+  - action: utter_hola
+  - action: name_form
+  - active_loop: name_form
+  - active_loop: null
+  - action: utter_ask_saludo
+
+
+- story: adiós
+  steps:
+  - intent: adios
+  - action: utter_adios
+
+
+- story: gracias
+  steps:
+  - intent: gracias
+  - action: utter_gracias
+
+- story: beneficio telefonica
+  steps:
+  - intent: beneficio_telefonica
+  - action: Coger_Intent
+
+
+- story: educación telefonica
+  steps:
+  - intent: Educación_telefonica
+  - action: Coger_Intent
+
+- story: sostenibilidad telefonica
+  steps:
+  - intent: sostenibilidad_telefonica
+  - action: Coger_Intent
+
+- story: acción telefonica
+  steps:
+  - intent: por_acción_telefonica
+  - action: Coger_Intent
+
+
+- story: empleados telefonica
+  steps:
+  - intent: empleados_telefonica
+  - action: Coger_Intent
+
+- story: social telefonica
+  steps:
+  - intent: social_telefonica
+  - action: Coger_Intent
+
+
+- story: OIBDA telefonica
+  steps:
+  - intent: OIBDA_telefonica
+  - action: Coger_Intent
+
+- story: precio accion telefónica
+  steps:
+  - intent: preguntar_precio_accion_telefonica
+  - action: Coger_Intent
+
+- story: medioambiente telefónica
+  steps:
+  - intent: medioambiente_telefonica
+  - action: Coger_Intent
+
+
+- story: Obtener información sobre entidad
+  steps:
+    - intent: información
+    - action: action_info_entidad
+    - slot_was_set:
+        - entidad: Telefónica
+
+
+
+- story: Obtener información sobre entidad
+  steps:
+    - intent: información
+    - action: action_info_entidad
+    - slot_was_set:
+        - entidad: BBVA
+
+
+
+- story: Obtener información sobre entidad
+  steps:
+    - intent: información
+    - action: action_info_entidad
+    - slot_was_set:
+        - entidad: Inditex
+
+
+- story: Obtener información sobre entidad
+  steps:
+    - intent: información
+    - action: action_info_entidad
+    - slot_was_set:
+        - entidad: Telefónica
+
+- story: Obtener información sobre entidad
+  steps:
+    - intent: información
+    - action: action_info_entidad
+    - slot_was_set:
+        - entidad: Santander
+
+
+- story: empleados santander
+  steps:
+  - intent: empleados_santander
+  - action: Coger_Intent
+
+- story: educación santander
+  steps:
+  - intent: educación_santander
+  - action: Coger_Intent
+
+
+- story: dividendos/acción santander
+  steps:
+  - intent: por_acción_santander
+  - action: Coger_Intent
+
+- story: social santander
+  steps:
+  - intent: social_santander
+  - action: Coger_Intent
+
+
+- story: beneficio antes de impuesto santander
+  steps:
+  - intent: beneficio_antes_de_impuesto_santander
+  - action: Coger_Intent
+
+- story: becas santander
+  steps:
+  - intent: becas_santander
+  - action: Coger_Intent
+
+- story: sostenibilidad santander
+  steps:
+  - intent: sostenibilidad_santander
+  - action: Coger_Intent
+
+- story: sostenibilidad santander
+  steps:
+  - intent: preguntar_precio_accion_santander
+  - action: Coger_Intent
+
+
+- story: donación bbva
+  steps:
+  - intent: donar_bbva
+  - action: Coger_Intent
+
+- story: empleados bbva
+  steps:
+  - intent: empleados_bbva
+  - action: Coger_Intent
+
+- story: medidas sociales bbva
+  steps:
+  - intent: sociales_bbva
+  - action: Coger_Intent
+
+- story: beneficio bbva
+  steps:
+  - intent: beneficio_bbva
+  - action: Coger_Intent
+
+- story: becas bbva
+  steps:
+  - intent: becas_bbva
+  - action: Coger_Intent
+  
+- story: sostenibilidad bbva
+  steps:
+  - intent: sostenibilidad_bbva
+  - action: Coger_Intent
+
+
+- story: educación bbva
+  steps:
+  - intent: educación_bbva
+  - action: Coger_Intent
+
+
+- story: cotización y dividendos por acción bbva
+  steps:
+  - intent: por_acción_bbva
+  - action: Coger_Intent
+
+- story: cotización y dividendos por acción bbva
+  steps:
+  - intent: por_acción_bbva
+  - action: Coger_Intent
+
+
+- story: medioambiente bbva
+  steps:
+  - intent: medioambiente_bbva
+  - action: Coger_Intent
+
+
+- story: beneficio inditex
+  steps:
+  - intent: Beneficios_inditex
+  - action: Coger_Intent
+
+- story: donaciones inditex
+  steps:
+  - intent: donar_inditex
+  - action: Coger_Intent
+
+- story: medioambiente inditex
+  steps:
+  - intent: medioambiente_inditex
+  - action: Coger_Intent
+
+
+- story: ebitda inditex
+  steps:
+  - intent: EBITDA_inditex
+  - action: Coger_Intent
+
+- story: educación inditex
+  steps:
+  - intent: educación_inditex
+  - action: Coger_Intent
+
+- story: precio acción inditex
+  steps:
+  - intent: preguntar_precio_accion_inditex
+  - action: Coger_Intent
+
+- story: precio acción santander
+  steps:
+  - intent: preguntar_precio_accion_santander
+  - action: Coger_Intent
+
+
+- story: precio acción telefonica
+  steps:
+  - intent: preguntar_precio_accion_telefonica
+  - action: Coger_Intent
+
+- story: dividendos telefonica
+  steps:
+  - intent: dividendos_inditex
+  - action: Coger_Intent
+
+
+
+- story: dividendos santander
+  steps:
+  - intent: dividendos_santander
+  - action: Coger_Intent
+
+
+- story: dividendos santander
+  steps:
+  - intent: dividendos_telefonica
+  - action: Coger_Intent
+
+
